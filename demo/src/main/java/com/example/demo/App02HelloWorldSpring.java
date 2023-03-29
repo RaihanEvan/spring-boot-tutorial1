@@ -12,8 +12,8 @@ public class App02HelloWorldSpring {
 	public static void main(String[] args) {
 		//Launch Context
 		//Add Configuration
-		@Configuration
 		var context = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
+		System.out.println(context.getBean("name"));
 	}
 
 }
