@@ -13,7 +13,7 @@ public class AppGamingBasicClass {
 		//var game = new MarioGame();
 		var game = new PacmanGame();
 
-		var gameRunner = new GameRunner(game);
+		var gameRunner = new GameRunner(game);//obj creation + wiring of dependencies
 		gameRunner.run();
 	}
 
