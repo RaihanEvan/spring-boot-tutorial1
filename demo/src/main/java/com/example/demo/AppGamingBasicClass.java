@@ -8,10 +8,10 @@ import com.example.demo.game.SuperContraGame;
 public class AppGamingBasicClass {
 
 	public static void main(String[] args) {
-		var superContra = new SuperContraGame();
-		var marioGame = new MarioGame();
-		//need to call new construc
-		var gameRunner = new GameRunner(superContra);
+		//var game = new SuperContraGame();
+		var game = new MarioGame();
+
+		var gameRunner = new GameRunner(game);
 		gameRunner.run();
 	}
 
