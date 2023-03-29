@@ -1,4 +1,4 @@
-package com.example.demo.game;
+package com.example.demo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,11 +27,15 @@ public class HelloWorldConfiguration {
         return new Person(name(),age(),address());
     }
     @Bean
-    public Person person3Parameters(String name,int age, Address address2){
-        return new Person(name,age,address2);
+    public Person person3Parameters(String name,int age, Address address3){
+        return new Person(name,age,address3);
     }
     @Bean(name = "address2")
     public Address address(){
         return new Address("Setabganj","Dinajpur");
+    }
+    @Bean(name = "address3")
+    public Address address3(){
+        return new Address("Shahjahanpur","Dhaka");
     }
 }
